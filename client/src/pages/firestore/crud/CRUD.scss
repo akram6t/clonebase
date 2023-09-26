@@ -1,0 +1,175 @@
+.crud_view{
+    background-color: white;
+    min-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(185, 185, 185);
+    display: flex;
+    flex-direction: column;
+
+
+    .paths{
+        padding: 15px 0px;
+        background-color: #f7f7f7;
+
+        .item{
+            margin-left: 10px;
+        }
+    }
+
+    .data_views{
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+
+        .views{
+            
+            .topbar{
+                display: flex;
+                background-color: #f7f7f7;
+                border-top: 2px solid #e3e3e3;
+                border-bottom: 2px solid #e3e3e3;
+                align-items: center;
+                padding: 10px;
+                gap: 10px;
+                justify-content: space-between;
+            }
+
+            .add_data{
+                margin-bottom: 0;
+            }
+
+            .add_data:hover{
+                background-color: #0d6dfd1e;
+                cursor: pointer;
+            }
+            .add_data:active{
+                background-color: #0d6dfd33;
+            }
+        }
+    }
+
+    .view_collections{
+        flex: 0.3;
+        // background-color: green;
+        border-right: 1px solid grey;
+
+
+        .collections{
+            display: flex;
+            flex-direction: column;
+
+            .list-item{
+                cursor: pointer;
+                padding: 3px 5px;
+                padding-left: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                // transition: 0.3s ease-in;
+                font-family: 'Poppins', sans-serif;
+                // font-weight: bold;
+            }
+            .list-item:hover{
+                background-color: rgba(0, 0, 0, 0.098);
+            }
+            .collection_active{
+                    font-weight: bold;
+                    background-color: rgba(0, 0, 0, 0.098);
+            }
+        }
+    }
+    .view_documents{
+        flex: 0.3;
+        // background-color: teal;
+        border-right: 1px solid grey;
+
+        .documents{
+            display: flex;
+            flex-direction: column;
+
+            .list-item{
+                cursor: pointer;
+                padding: 3px 5px;
+                padding-left: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                // transition: 0.3s ease-in;
+                font-family: 'Poppins', sans-serif;
+                // font-weight: bold;
+            }
+            .list-item:hover{
+                background-color: rgba(0, 0, 0, 0.098);
+            }
+            .document_active{
+                    font-weight: bold;
+                    background-color: rgba(0, 0, 0, 0.098);
+            }
+        }
+    }
+    .view_fields{
+        flex: 0.4;
+        // background-color: cyan;
+        // border-right: 1px solid grey;
+
+        .fields{
+            display: flex;
+            flex-direction: column;
+
+            .list-item{
+                cursor: pointer;
+                padding: 3px 5px;
+                padding-left: 25px;
+                display: flex;
+                // align-items: center;
+                // justify-content: space-between;
+                gap: 10px;
+                // transition: 0.3s ease-in;
+                font-family: 'Open Sans', sans-serif;
+                position: relative;
+                // font-weight: bold;
+            }
+
+            .list-item:hover{
+                background-color: rgba(0, 0, 0, 0.098);
+            }
+
+            .document_active{
+                    font-weight: bold;
+                    background-color: rgba(0, 0, 0, 0.098);
+            }
+
+
+            .item-actions{
+                display: none;
+                position: absolute;
+                right: 10px;
+                top: 0;
+                gap: 10px;
+                // padding: 5px;
+                padding-left: 3px;
+                padding-right: 5px;
+                margin-top: 5px;
+                background-color: #ebebeb;
+                box-shadow: 0px 0px 20px white;
+
+                & span{
+                    opacity: 0.5;
+                }
+
+                & > .icon:hover{
+                    opacity: 0.5;
+                }
+                & > .icon:active{
+                    opacity: 0.8;
+                }
+            }
+
+            .list-item:hover .item-actions{
+                display: flex;
+            }
+            
+        }
+    }
+}

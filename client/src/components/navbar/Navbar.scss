@@ -1,0 +1,25 @@
+.navbar{
+    display: flex;
+    // background-color: white;
+    padding: 10px;
+
+    .drop_name{
+        font-weight: bold;
+        background-color: white;
+    }
+
+    .actions{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        & > *{
+            cursor: pointer;
+            &:hover{
+                background-color: rgba(128, 128, 128, 0.477);
+                border-radius: 100px;
+            }
+        }
+    }
+}

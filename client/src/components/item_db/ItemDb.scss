@@ -1,0 +1,42 @@
+.grid_item {
+    background-color: white;
+    cursor: pointer;
+    // overflow: hidden;
+    border: 1px solid transparent;
+    transition: 0.3s ease-in-out;
+    
+    &:hover{
+        border: 1px solid red;
+    }
+    &:active{
+        border: 2px solid black;
+    }
+
+    .dbnameWithmenu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .dropdown-toggle {
+        padding: 5px;
+      }
+      .dropdown-toggle:hover {
+        background-color: #f9f9f9;
+      }
+
+      .dropdown-toggle::after {
+        content: none; /* Remove the default down arrow icon */
+      }
+
+      .dropRename {
+        color: green;
+      }
+      .dropDelete {
+        color: red;
+      }
+      .dropRename:hover,
+      .dropDelete:hover {
+        background-color: #eaeaea;
+      }
+    }
+  }
