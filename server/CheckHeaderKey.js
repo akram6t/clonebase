@@ -1,3 +1,0 @@
-const CheckHeaderKey = (apiKey, token) => {
-    
-}
