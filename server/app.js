@@ -9,9 +9,9 @@ const PORT = 5000;
 const { cluster_signup, cluster_login, check_authtoken, cluster_isSignup } = require("./ClusterAuth");
 
 const User = {
-  username: "akram6t",
-  password: "khan1234",
-  mongodbUrl: "mongodb://127.0.0.1:27017/",
+  username: "",
+  password: "",
+  mongodbUrl: "",
   token: "",
 };
 
